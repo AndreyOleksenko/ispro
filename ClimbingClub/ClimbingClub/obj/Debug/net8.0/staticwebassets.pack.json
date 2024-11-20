@@ -1,0 +1,29 @@
+{
+  "Files": [
+    {
+      "Id": "H:\\4 курс\\ИСРПО\\Лабы\\7\\ClimbingClub\\ClimbingClub\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "H:\\4 курс\\ИСРПО\\Лабы\\7\\ClimbingClub\\ClimbingClub\\wwwroot\\js\\chart.js",
+      "PackagePath": "staticwebassets\\js\\chart.js"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.ClimbingClub.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.ClimbingClub.props",
+      "PackagePath": "build\\ClimbingClub.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.ClimbingClub.props",
+      "PackagePath": "buildMultiTargeting\\ClimbingClub.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.ClimbingClub.props",
+      "PackagePath": "buildTransitive\\ClimbingClub.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

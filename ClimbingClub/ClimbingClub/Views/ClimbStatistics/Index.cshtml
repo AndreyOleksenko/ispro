@@ -1,0 +1,73 @@
+﻿@{
+    ViewData["Title"] = "Climbing Statistics";
+}
+
+<h1>Статистика Восхождений</h1>
+
+<select id="yearSelect"></select>
+
+<canvas id="myChart" width="400" height="200"></canvas>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    var myChart;
+
+    // Загружаем доступные года из БД при загрузке страницы
+    $(document).ready(function () {
+        $.ajax({
+            url: '/ClimbStatistics/GetYears',
+            method: 'GET',
+            success: function (data) {
+                var yearSelect = $('#yearSelect');
+                yearSelect.empty(); // Очищаем предыдущие опции
+                data.forEach(function (year) {
+                    yearSelect.append(new Option(year, year));
+                });
+                yearSelect.change(); // Вызываем изменение года по умолчанию
+            }
+        });
+    });
+
+    // Загружаем данные при изменении года
+    $("#yearSelect").change(function () {
+        var selectedYear = $(this).val();
+        $.ajax({
+            url: `/ClimbStatistics/GetClimbStatistics?year=${selectedYear}`,
+            method: "GET",
+            success: function (data) {
+                var labels = data.map(d => d.climberName);
+                var values = data.map(d => d.climbCount);
+
+                if (myChart) {
+                    myChart.destroy();
+                }
+
+                var ctx = document.getElementById('myChart').getContext('2d');
+                myChart = new Chart(ctx, {
+                    type: 'bar', // Или 'pie' для круговой диаграммы
+                    data: {
+                        labels: labels,
+                        datasets: [{
+                            label: 'Количество восхождений',
+                            data: values,
+                            backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                            borderColor: 'rgba(75, 192, 192, 1)',
+                            borderWidth: 1
+                        }]
+                    },
+                    options: {
+                        scales: {
+                            y: {
+                                beginAtZero: true
+                            }
+                        }
+                    }
+                });
+            },
+            error: function () {
+                alert('Ошибка при загрузке данных');
+            }
+        });
+    });
+</script>

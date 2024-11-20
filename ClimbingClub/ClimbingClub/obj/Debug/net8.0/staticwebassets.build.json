@@ -1,0 +1,58 @@
+{
+  "Version": 1,
+  "Hash": "a27qVb+45gi1yuMSEc32sirvwN7LL/DL+uNf+X2mIFk=",
+  "Source": "ClimbingClub",
+  "BasePath": "_content/ClimbingClub",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "ClimbingClub\\wwwroot",
+      "Source": "ClimbingClub",
+      "ContentRoot": "H:\\4 курс\\ИСРПО\\Лабы\\7\\ClimbingClub\\ClimbingClub\\wwwroot\\",
+      "BasePath": "_content/ClimbingClub",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "H:\\4 курс\\ИСРПО\\Лабы\\7\\ClimbingClub\\ClimbingClub\\wwwroot\\index.html",
+      "SourceId": "ClimbingClub",
+      "SourceType": "Discovered",
+      "ContentRoot": "H:\\4 курс\\ИСРПО\\Лабы\\7\\ClimbingClub\\ClimbingClub\\wwwroot\\",
+      "BasePath": "_content/ClimbingClub",
+      "RelativePath": "index.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\index.html"
+    },
+    {
+      "Identity": "H:\\4 курс\\ИСРПО\\Лабы\\7\\ClimbingClub\\ClimbingClub\\wwwroot\\js\\chart.js",
+      "SourceId": "ClimbingClub",
+      "SourceType": "Discovered",
+      "ContentRoot": "H:\\4 курс\\ИСРПО\\Лабы\\7\\ClimbingClub\\ClimbingClub\\wwwroot\\",
+      "BasePath": "_content/ClimbingClub",
+      "RelativePath": "js/chart.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\chart.js"
+    }
+  ]
+}
